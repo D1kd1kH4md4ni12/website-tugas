@@ -1,0 +1,95 @@
+/* Disk Scheduling Styles */
+.input-section {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.input-label {
+    font-weight: bold;
+    width: 150px;
+}
+
+.input-value {
+    background-color: #e9ecef;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-family: monospace;
+    flex-grow: 1;
+}
+
+.results-section {
+    margin: 2rem 0;
+}
+
+.results-table {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.results-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-table th, 
+.results-table td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.chart-container {
+    margin: 2rem 0;
+    height: 400px;
+    position: relative;
+}
+
+.algorithm-explanations {
+    margin-top: 2rem;
+}
+
+.algorithm {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.algorithm h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .input-label {
+        margin-bottom: 0.5rem;
+        width: auto;
+    }
+    
+    .results-table table {
+        font-size: 0.9rem;
+    }
+}

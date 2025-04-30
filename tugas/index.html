@@ -1,0 +1,58 @@
+<!-- Update the Tugas 1 modal -->
+<div id="tugas1" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('tugas1')">&times;</span>
+        <h2>Analisis Algoritma Penjadwalan Disk</h2>
+        
+        <div class="input-section">
+            <h3>Data Input</h3>
+            <div class="input-group">
+                <span class="input-label">Jumlah Track:</span>
+                <span class="input-value">2050</span>
+            </div>
+            <div class="input-group">
+                <span class="input-label">Posisi Head Awal:</span>
+                <span class="input-value">1234</span>
+            </div>
+            <div class="input-group">
+                <span class="input-label">Urutan Track:</span>
+                <span class="input-value">1500, 1100, 1750, 1900, 120, 850, 60, 1300, 1400, 600, 900, 1500, 1000, 30, 1900, 2003, 700, 1300, 55, 2025, 194, 700, 1500, 200</span>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h3>Hasil Perhitungan</h3>
+            <div class="results-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Algoritma</th>
+                            <th>Total Seek Distance</th>
+                            <th>Urutan Lintasan</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-body">
+                        <!-- Will be filled by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="seekChart"></canvas>
+            </div>
+        </div>
+
+        <div class="algorithm-explanations">
+            <h3>Penjelasan Algoritma</h3>
+            <div class="algorithm">
+                <h4>FCFS (First Come First Serve)</h4>
+                <p>Melayani request sesuai urutan kedatangan. Sederhana tetapi tidak efisien karena head bergerak acak mengikuti urutan permintaan.</p>
+            </div>
+            <div class="algorithm">
+                <h4>SSTF (Shortest Seek Time First)</h4>
+                <p>Selalu memilih request terdekat dari posisi head saat ini. Paling optimal dalam mengurangi seek time tetapi berpotensi menyebabkan starvation.</p>
+            </div>
+            <!-- Add other algorithm explanations here -->
+        </div>
+    </div>
+</div>

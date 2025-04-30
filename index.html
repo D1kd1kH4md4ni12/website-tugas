@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekayasa Perangkat Lunak - Materi & Tugas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header dengan Background Foto dan border merah -->
+    <header class="header">
+        <h1>Sistem Operasi</h1>
+        <p>Tugas Mata Kuliah</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#tugas">Daftar Tugas</a></li>
+            <li><a href="#footer">Tentang Saya</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2 class="section-title" id="tugas">Daftar Tugas</h2>
+        
+        <div class="tugas-grid">
+            <!-- Tugas 1 -->
+            <div class="tugas-card" onclick="openModal('tugas1')">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tugas 1" class="tugas-img">
+                <div class="tugas-content">
+                    <h3 class="tugas-title">Analisis Kebutuhan Sistem</h3>
+                    <p class="tugas-desc">Menganalisis kebutuhan sistem untuk aplikasi manajemen tugas kampus.</p>
+                    <a href="#" class="btn">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Tugas 2 -->
+            <div class="tugas-card" onclick="openModal('tugas2')">
+                <img src="https://images.unsplash.com/photo-1624953587687-daf255b6b80a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tugas 2" class="tugas-img">
+                <div class="tugas-content">
+                    <h3 class="tugas-title">Diagram UML</h3>
+                    <p class="tugas-desc">Membuat diagram use case, class diagram, dan sequence diagram.</p>
+                    <a href="#" class="btn">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Tugas 3 -->
+            <div class="tugas-card" onclick="openModal('tugas3')">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tugas 3" class="tugas-img">
+                <div class="tugas-content">
+                    <h3 class="tugas-title">Prototyping</h3>
+                    <p class="tugas-desc">Membuat prototype aplikasi menggunakan Figma.</p>
+                    <a href="#" class="btn">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal untuk Detail Tugas -->
+    <div id="tugas1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('tugas1')">&times;</span>
+            <h2>Analisis Kebutuhan Sistem</h2>
+            <p><strong>Deskripsi:</strong> Menganalisis kebutuhan sistem untuk aplikasi manajemen tugas kampus.</p>
+            <p><strong>Tanggal Pengumpulan:</strong> 15 Oktober 2023</p>
+            <p><strong>Status:</strong> Selesai</p>
+            <p><strong>Detail:</strong> Dalam tugas ini, saya melakukan analisis kebutuhan fungsional dan non-fungsional untuk aplikasi manajemen tugas kampus. Aplikasi ini akan membantu mahasiswa dalam mengorganisir tugas-tugas mereka dengan fitur reminder, klasifikasi mata kuliah, dan prioritas tugas.</p>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tugas 1 Detail" class="modal-img">
+        </div>
+    </div>
+
+    <div id="tugas2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('tugas2')">&times;</span>
+            <h2>Diagram UML</h2>
+            <p><strong>Deskripsi:</strong> Membuat diagram use case, class diagram, dan sequence diagram.</p>
+            <p><strong>Tanggal Pengumpulan:</strong> 30 Oktober 2023</p>
+            <p><strong>Status:</strong> Selesai</p>
+            <p><strong>Detail:</strong> Tugas ini mengharuskan pembuatan tiga jenis diagram UML untuk sistem manajemen tugas kampus. Use case diagram menggambarkan interaksi antara aktor dan sistem, class diagram menunjukkan struktur kelas, dan sequence diagram menampilkan alur interaksi antar objek.</p>
+            <img src="https://images.unsplash.com/photo-1624953587687-daf255b6b80a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tugas 2 Detail" class="modal-img">
+        </div>
+    </div>
+
+    <div id="tugas3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('tugas3')">&times;</span>
+            <h2>Prototyping</h2>
+            <p><strong>Deskripsi:</strong> Membuat prototype aplikasi menggunakan Figma.</p>
+            <p><strong>Tanggal Pengumpulan:</strong> 15 November 2023</p>
+            <p><strong>Status:</strong> Dalam Pengerjaan</p>
+            <p><strong>Detail:</strong> Prototype ini mencakup semua halaman utama aplikasi manajemen tugas, termasuk dashboard, daftar tugas, kalender, dan pengaturan. Saya menggunakan Figma untuk membuat wireframe dan prototype interaktif dengan transisi antara halaman.</p>
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tugas 3 Detail" class="modal-img">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <h3 class="footer-title">Tentang Saya</h3>
+            <p> Nama    :   Dikdik Hamdani
+                NIM     :   2303010194
+                Prodi   :   Teknik Informatika
+                kelas   :   H-23 
+            </p>
+            <p>Email: dikdikhamdani@gmail.com</p>
+            
+            <!-- Social Media Icons -->
+            <div class="social-media">
+                <a href="https://www.instagram.com/dikdikhmdni_?igsh=MW0yZmJ0YmtqcWJjOQ%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100081467990840" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/6283825486811" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.tiktok.com/@dikdikhmdni_?_r=1&_d=eid311mgfhii33&sec_uid=MS4wLjABAAAAX3fR-upiIQLGiNaKimW4PqMXkeHdTzfS88h1CwAKEyuK3mXXByZ0r9r0k1sqMZ0D&share_author_id=6713439290104529921&sharer_language=en&source=h5_t&u_code=d77ldemhg4dafj&ug_btm=b8727,b0&social_share_type=4&utm_source=copy&sec_user_id=MS4wLjABAAAAX3fR-upiIQLGiNaKimW4PqMXkeHdTzfS88h1CwAKEyuK3mXXByZ0r9r0k1sqMZ0D&tt_from=copy&utm_medium=ios&utm_campaign=client_share&enable_checksum=1&user_id=6713439290104529921&share_link_id=BD8DFA5A-9303-4EDA-8AF4-452E011479EC&share_app_id=1180" target="_blank" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            
+            <p>© 2023 Rekayasa Perangkat Lunak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
